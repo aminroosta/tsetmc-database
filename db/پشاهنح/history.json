@@ -1,0 +1,74 @@
+[
+ {
+  "tarikh": "۱۳۸۶/۹/۷",
+  "date": "2007-11-28",
+  "count": 51,
+  "volume": 1342633,
+  "value": 805579800,
+  "open": 600,
+  "high": 600,
+  "low": 600,
+  "close": 600,
+  "final": 600
+ },
+ {
+  "tarikh": "۱۳۸۶/۹/۶",
+  "date": "2007-11-27",
+  "count": 77,
+  "volume": 2220000,
+  "value": 1332000000,
+  "open": 600,
+  "high": 600,
+  "low": 600,
+  "close": 600,
+  "final": 600
+ },
+ {
+  "tarikh": "۱۳۸۴/۱۱/۱۶",
+  "date": "2006-02-05",
+  "count": 13,
+  "volume": 373548,
+  "value": 373548,
+  "open": 1,
+  "high": 1,
+  "low": 1,
+  "close": 1,
+  "final": 1
+ },
+ {
+  "tarikh": "۱۳۸۴/۱۱/۱۵",
+  "date": "2006-02-04",
+  "count": 47,
+  "volume": 2250000,
+  "value": 2250000,
+  "open": 1,
+  "high": 1,
+  "low": 1,
+  "close": 1,
+  "final": 1
+ },
+ {
+  "tarikh": "۱۳۸۲/۱۲/۶",
+  "date": "2004-02-25",
+  "count": 2,
+  "volume": 1438971,
+  "value": 1438971,
+  "open": 1,
+  "high": 1,
+  "low": 1,
+  "close": 1,
+  "final": 1
+ },
+ {
+  "tarikh": "۱۳۸۲/۹/۲۴",
+  "date": "2003-12-15",
+  "count": 1,
+  "volume": 1000,
+  "value": 250000,
+  "open": 250,
+  "high": 250,
+  "low": 250,
+  "close": 250,
+  "final": 250
+ }
+]

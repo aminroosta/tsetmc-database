@@ -1,0 +1,98 @@
+[
+ {
+  "tarikh": "۱۳۹۲/۱۲/۴",
+  "date": "2014-02-23",
+  "count": 10,
+  "volume": 93349,
+  "value": 322147399,
+  "open": 3451,
+  "high": 3451,
+  "low": 3451,
+  "close": 3451,
+  "final": 3451
+ },
+ {
+  "tarikh": "۱۳۹۲/۷/۷",
+  "date": "2013-09-29",
+  "count": 2,
+  "volume": 7205,
+  "value": 12320550,
+  "open": 1710,
+  "high": 1710,
+  "low": 1710,
+  "close": 1710,
+  "final": 1710
+ },
+ {
+  "tarikh": "۱۳۹۲/۷/۳",
+  "date": "2013-09-25",
+  "count": 1,
+  "volume": 1,
+  "value": 1584,
+  "open": 1584,
+  "high": 1584,
+  "low": 1584,
+  "close": 1584,
+  "final": 1584
+ },
+ {
+  "tarikh": "۱۳۹۲/۷/۲",
+  "date": "2013-09-24",
+  "count": 1,
+  "volume": 1,
+  "value": 1467,
+  "open": 1467,
+  "high": 1467,
+  "low": 1467,
+  "close": 1467,
+  "final": 1467
+ },
+ {
+  "tarikh": "۱۳۹۲/۷/۱",
+  "date": "2013-09-23",
+  "count": 1,
+  "volume": 1,
+  "value": 1359,
+  "open": 1359,
+  "high": 1359,
+  "low": 1359,
+  "close": 1359,
+  "final": 1359
+ },
+ {
+  "tarikh": "۱۳۹۲/۶/۱۹",
+  "date": "2013-09-10",
+  "count": 1,
+  "volume": 1,
+  "value": 1259,
+  "open": 1259,
+  "high": 1259,
+  "low": 1259,
+  "close": 1259,
+  "final": 1259
+ },
+ {
+  "tarikh": "۱۳۹۲/۶/۱۸",
+  "date": "2013-09-09",
+  "count": 1,
+  "volume": 3,
+  "value": 3498,
+  "open": 1166,
+  "high": 1166,
+  "low": 1166,
+  "close": 1166,
+  "final": 1166
+ },
+ {
+  "tarikh": "۱۳۹۲/۶/۱۷",
+  "date": "2013-09-08",
+  "count": 1,
+  "volume": 183,
+  "value": 197640,
+  "open": 1080,
+  "high": 1080,
+  "low": 1080,
+  "close": 1080,
+  "final": 1080
+ }
+]

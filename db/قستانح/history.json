@@ -1,0 +1,38 @@
+[
+ {
+  "tarikh": "۱۳۸۴/۷/۲۵",
+  "date": "2005-10-17",
+  "count": 36,
+  "volume": 347712,
+  "value": 6954240,
+  "open": 20,
+  "high": 20,
+  "low": 20,
+  "close": 20,
+  "final": 20
+ },
+ {
+  "tarikh": "۱۳۸۴/۷/۲۳",
+  "date": "2005-10-15",
+  "count": 2,
+  "volume": 3000,
+  "value": 60000,
+  "open": 20,
+  "high": 20,
+  "low": 20,
+  "close": 20,
+  "final": 20
+ },
+ {
+  "tarikh": "۱۳۸۴/۷/۱۱",
+  "date": "2005-10-03",
+  "count": 2,
+  "volume": 5000,
+  "value": 100000,
+  "open": 20,
+  "high": 20,
+  "low": 20,
+  "close": 20,
+  "final": 20
+ }
+]
