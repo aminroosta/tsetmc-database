@@ -15,7 +15,6 @@ async function update_intraday() {
     async_pool(1, assets, async (asset) => {
         await intraday(asset);
         bar.tick(asset);
-        console.log("\n");
     });
 }
 
@@ -48,4 +47,5 @@ async function intraday({id, symbol}) {
         }
         bar.tick({date: day.date, failed});
     });
+    console.log("");
 }
