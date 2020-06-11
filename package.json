@@ -1,0 +1,21 @@
+{
+  "name": "tsetmc-database",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "progress": "^2.0.3",
+    "tiny-async-pool": "^1.1.0",
+    "tsetmc-api": "^0.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "rah": "node rebuild_asset_history.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aminroosta/tsetmc-database.git"
+  },
+  "author": "amin.roosta@outlook.com",
+  "license": "MIT"
+}
