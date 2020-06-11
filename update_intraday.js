@@ -34,7 +34,7 @@ async function intraday({id, symbol}) {
     // update remaining/new intraday dates
     var bar = new progress_bar(`${symbol} :bar failed=:failed :current/:total :date`, { total: history.length, width: 60 });
     let failed = 0;
-    await async_pool(120, history, async (day) => {
+    await async_pool(60, history, async (day) => {
         try {
             const intraday = await api.intraday(id, day.date);
             // compress intraday data
