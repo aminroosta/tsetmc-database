@@ -15,6 +15,7 @@ async function update_intraday() {
     async_pool(1, assets, async (asset) => {
         await intraday(asset);
         bar.tick(asset);
+        console.log("\n");
     });
 }
 
