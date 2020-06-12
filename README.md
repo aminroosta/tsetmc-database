@@ -107,5 +107,5 @@ await read_zlib(symbol, date);
 <p dir="rtl">
 بدلیل تعداد بالای نماد ها (بیش از 800 نماد) حجم این ریپازیتوری هم اکنون بیشتر از 2 گیگابایت است.
 <br/>
-اگر تمام فایل تمام نمادها را لازم ندارید، میتوانید از <a href="https://github.com/aminroosta/tsetmc-api">tsetmc-api</a> استفاده کنید
+اگر تمام نمادها را لازم ندارید، میتوانید از <a href="https://github.com/aminroosta/tsetmc-api">tsetmc-api</a> استفاده کنید
 </p>
