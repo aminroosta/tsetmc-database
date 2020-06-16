@@ -13,7 +13,7 @@
 `/db/assets.json`
 // [
 //  {
-//      id: 'loader.aspx?ParTree=111C1412&inscode=32338211917133256',
+//      id: '32338211917133256',
 //      asset_code: 'IRR1YASA0101',
 //      group_code: 'N2',
 //      industry: 'لاستيك و پلاستيك',
@@ -68,12 +68,12 @@ const inflate = util.promisify(zlib.inflate);
 
 async function read_zlib(symbol, date) {
     const path = `db/${symbol}/${date}.zlib`;
-    let buffer = await fs.promises.read(path);
+    let buffer = await fs.promises.readFile(path);
     buffer = await inflate(buffer);
     return JSON.parse(buffer.toString('utf8'));
 }
 
-const symobl = 'آپ';
+const symbol = 'آپ';
 const date = '2020-06-10';
 await read_zlib(symbol, date);
 // {
