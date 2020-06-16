@@ -114,9 +114,9 @@ async function insert_assets(assets) {
 async function insert_ohlc_1d(assets) {
     let bar = new progress_bar(
         'ohld_1d :bar :current/:total :symbol',
-        { total: assets.length, width: 60 }
+        { total: assets.length, width: 40 }
     );
-    await async_pool(5, assets, async a => {
+    await async_pool(20, assets, async a => {
         const ohlc_1d = await read_json(`db/${a.symbol}/history.json`);
         for(let v of ohlc_1d) {
             await pool.query({
@@ -153,10 +153,10 @@ async function insert_intraday(assets) {
 
     let bar = new progress_bar(
         'intraday :bar :current/:total :symbol :date',
-        { total: intraday.length, width: 60 }
+        { total: intraday.length, width: 40 }
     );
 
-    await async_pool(5, intraday, async day => {
+    await async_pool(20, intraday, async day => {
         const { order_book, trades} = await read_zlib(day.symbol, day.date);
         order_book.sort((a,b) => a.time > b.time ? +1 : a.time < b.time ? -1 : 0);
         trades.sort((a,b) => a.time > b.time ? +1 : a.time < b.time ? -1 : 0);
@@ -182,34 +182,24 @@ async function insert_intraday(assets) {
         }).filter(order => order.ask || order.bid);
 
 
-        for(let tick of ticks) {
-            try {
-            const date = day.date + ' ' + tick.time;
-            await pool.query({
-                name: 'insert-tick',
-                text: `
-                  INSERT INTO tick ( symbol, date, volume, price)
-                  values ( $1, $2, $3, $4)`,
-                values: [
-                    day.symbol, date, tick.volume, tick.price
-                ]
-            });
-            } catch(e) {
-                console.log(day, tick);
-                throw e;
-            }
+        // insert ticks
+        if(ticks.length) {
+            await pool.query(
+                `INSERT INTO tick (symbol, date, volume, price)
+                VALUES ${ticks.map(
+                    tick => `('${day.symbol}','${day.date} ${tick.time}',${tick.volume},${tick.price})`
+                ).join(',')}`
+            );
         }
-        for(let order of orders) {
-            const date = day.date + ' ' + order.time;
-            await pool.query({
-                name: 'insert-orderbook',
-                text: `
-                  INSERT INTO orderbook (symbol, date, ask, bid)
-                  values ($1, $2, $3, $4)`,
-                values: [
-                    day.symbol, date, order.ask, order.bid
-                ]
-            });
+
+        // insert orders
+        if(orders.length) {
+            await pool.query(
+                `INSERT INTO orderbook (symbol, date, ask, bid)
+              VALUES ${orders.map(
+                  order => `('${day.symbol}','${day.date} ${order.time}',${order.ask},${order.bid})`
+              ).join(',')}`
+            );
         }
 
         bar.tick(day);
